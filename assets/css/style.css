@@ -1,3 +1,7 @@
+/*
+
+Basic Portfolio */
+
 /***** Global *****/
 
 html,
@@ -6,9 +10,8 @@ body {
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    line-height: 1.6em;
+    /*font-family: Arial, Helvetica, sans-serif;*/
+    font: 16px/1.8em 'Lato', sans-serif;
     color: #777777;
     background: #ccc url(../images/whirlpool.png) repeat;
     height: 100%;
@@ -22,9 +25,12 @@ a {
     color: #4aaaa5;
     text-decoration: underline;
 }
+a:focus,
+a:active { color: #7accc8; }
 
 a:hover {
     color: #ccc;
+    transition: all 1s ease-out;
 }
 
 a.active {
@@ -35,7 +41,8 @@ a.active {
 h1,
 h2,
 h3 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Playfair Display', serif;
+    /*font-family: Georgia, 'Times New Roman', Times, serif; */
     font-weight: 900;
 }
 
@@ -84,9 +91,10 @@ nav ul {
 nav li {
     display: inline-block;
     margin-right: 0.25em;
+
 }
 
-nav li:after {
+nav li::after {
     content: "|";
 }
 
@@ -114,7 +122,7 @@ nav a:hover {
     color: #4aaaa5;
 }
 
-/***** Sections *****/
+/***** Content *****/
 
 .container {
     margin: 0 auto;
@@ -149,9 +157,8 @@ section#portfolio .workItem .workTitle {
     display: block;
     width: 100%;
     text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: 400;
-    font-size: 20px;
+    /*font-family: Georgia, 'Times New Roman', Times, serif;*/
+    font: 400 20px 'Playfair Display', serif;
     color: #fff;
     padding: 20px;
     background-color: #4aaaa5;
@@ -261,20 +268,4 @@ footer {
 
 .cf:after {
     clear: both;
-}
-
-/***** Media queries *****/
-
-@media (max-width: 320px) {
-    a#myName {
-        width: 100%;
-        margin-bottom: 20px;
-        padding: 20px 0;
-    }
-    nav {
-        text-align: center;
-    }
-    nav ul {
-        position: relative;
-    }
 }

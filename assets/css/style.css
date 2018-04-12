@@ -24,13 +24,16 @@ p {
 a {
     color: #4aaaa5;
     text-decoration: underline;
+    transition: all .15s ease-in-out;
 }
 a:focus,
-a:active { color: #7accc8; }
+a:active { 
+    color: #7accc8; 
+    text-decoration: none; }
 
 a:hover {
     color: #ccc;
-    transition: all 1s ease-out;
+    text-decoration: none;
 }
 
 a.active {
@@ -60,6 +63,7 @@ a#myName {
     display: block;
     width: 33%;
     text-align: center;
+    text-decoration: none;
     padding: 34px 20px;
 }
 
@@ -162,6 +166,7 @@ section#portfolio .workItem .workTitle {
     color: #fff;
     padding: 20px;
     background-color: #4aaaa5;
+    transition: all .15s ease-in-out;
     position: absolute;
     bottom: 10px;
     z-index: 1;

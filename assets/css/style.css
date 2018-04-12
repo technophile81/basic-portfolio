@@ -135,7 +135,7 @@ section {
     border: 1px solid #ccc;
     padding: 30px;
     overflow: auto;
-    min-height: calc(70vh - 10px);
+    min-height: calc(72vh - 12px);
 }
 
 section#portfolio .workItem {
@@ -253,7 +253,7 @@ footer {
     padding: 42px 0 30px;
     margin-top: 38px;
     color: #ccc;
-    height: 10px;
+    height: 12px;
 }
 
 /***** Clearfix helper *****/

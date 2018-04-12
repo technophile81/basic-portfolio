@@ -1,0 +1,280 @@
+/***** Global *****/
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.6em;
+    color: #777777;
+    background: #ccc url(../images/whirlpool.png) repeat;
+    height: 100%;
+}
+
+p {
+    margin-bottom: 16px;
+}
+
+a {
+    color: #4aaaa5;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #ccc;
+}
+
+a.active {
+    font-weight: 700;
+    color: #4aaaa5;
+}
+
+h1,
+h2,
+h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 900;
+}
+
+/***** Header *****/
+
+h1 {
+    font-size: 32px;
+    color: #fff;
+    font-weight: 900;
+    line-height: 1em;
+}
+
+a#myName {
+    background-color: #4aaaa5;
+    display: block;
+    width: 33%;
+    text-align: center;
+    padding: 34px 20px;
+}
+
+a#myName:hover {
+    text-decoration: none;
+    background-color: #7accc8;
+}
+
+header {
+    background-color: #fff;
+    border-bottom: 2px solid #ccc;
+    margin: 0 auto 38px;
+    width: 100%;
+}
+
+/***** Nav *****/
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    height: 26px;
+    margin-top: -13px;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 0.25em;
+}
+
+nav li:after {
+    content: "|";
+}
+
+nav li:last-child {
+    margin-right: 0em;
+}
+
+nav li:last-child::after {
+    content: "";
+}
+
+nav li:last-child a {
+    padding-right: 0;
+}
+
+nav a {
+    font-size: 14px;
+    color: #777777;
+    text-decoration: none;
+    padding: 0px 8px;
+    display: inline-block;
+}
+
+nav a:hover {
+    color: #4aaaa5;
+}
+
+/***** Sections *****/
+
+.container {
+    margin: 0 auto;
+    max-width: 960px;
+    position: relative;
+}
+
+section {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 30px;
+    overflow: auto;
+    min-height: calc(70vh - 10px);
+}
+
+section#portfolio .workItem {
+    width: 274px;
+    height: 204px;
+    overflow: hidden;
+    position: relative;
+    margin-right: 28px;
+    margin-bottom: 28px;
+    float: left;
+}
+
+section#portfolio .workItem img {
+    width: 100%;
+    height: auto;
+}
+
+section#portfolio .workItem .workTitle {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff;
+    padding: 20px;
+    background-color: #4aaaa5;
+    position: absolute;
+    bottom: 10px;
+    z-index: 1;
+}
+
+section#portfolio .workItem a:hover .workTitle {
+    background-color: #333;
+    opacity: 0.8;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+    color: #4aaaa5;
+    border-bottom: 2px solid #ccc;
+}
+
+img#bioImage {
+    float: left;
+    width: 200px;
+    margin-right: 20px;
+}
+
+/***** Form *****/
+
+form,
+input {
+    font-size: 14px;
+}
+
+form div {
+    margin-bottom: 14px;
+}
+
+label {
+    display: block;
+    margin-bottom: 2px;
+    font-size: 16px;
+}
+
+input,
+textarea {
+    width: 100%;
+    display: block;
+    color: #777;
+    padding: 4px;
+    border: 1px solid #ccc;
+
+}
+
+input#submit {
+    width: 100px;
+    padding: 10px;
+    background-color: #4aaaa5;
+    border: 1px solid #7accc8;
+    color: #fff;
+}
+
+input#submit:hover {
+    cursor: hand;
+    background-color: #7accc8;
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #ccc;
+    opacity: 1;
+    /* Firefox */
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #ccc;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #ccc;
+}
+
+/***** Footer *****/
+
+footer {
+    text-align: center;
+    display: block;
+    background: #666;
+    border-top: 6px solid #4aaaa5;
+    padding: 42px 0 30px;
+    margin-top: 38px;
+    color: #ccc;
+    height: 10px;
+}
+
+/***** Clearfix helper *****/
+
+.cf:before,
+.cf:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/***** Media queries *****/
+
+@media (max-width: 320px) {
+    a#myName {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 20px 0;
+    }
+    nav {
+        text-align: center;
+    }
+    nav ul {
+        position: relative;
+    }
+}

@@ -225,7 +225,6 @@ input#submit {
 }
 
 input#submit:hover {
-    cursor: hand;
     background-color: #7accc8;
 }
 
